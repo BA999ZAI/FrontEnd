@@ -1,0 +1,89 @@
+
+
+/* Тело */
+body {
+
+}
+
+
+/* Первый блок */
+.block_1 {
+  float: left;
+  position: static;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  background: #EEEDDE;
+}
+
+
+/* Первый блок, меню */
+.b_1_top {
+  width: 100%;
+  height: auto;
+}
+
+
+/* 0~Mah */
+.mah {
+  float: left;
+  font-weight: 600;
+  font-size: 32px;
+  width: 100px;
+  height: 28px;
+  padding-left: 8%;
+  padding-top: 3%;
+  color: #203239;
+}
+
+
+/* menu */
+.menu {
+  float: left;
+  padding-top: 3%;
+  width: 20%;
+  color: #203239;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Второй блок */
+.block_2 {
+
+}
+
+
+/* Третий блок */
+.block_3 {
+
+}
+
+
+/* Четвертый блок */
+.block_4 {
+
+}
+
+
+/* Пятый блок */
+.block_5 {
+
+}
+
+
+/* Нижняя полоса */
+footer {
+
+}
