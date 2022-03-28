@@ -87,6 +87,7 @@ body {
 /* Основная, левая часть первого блока */
 .b_1_left {
   float: left;
+  margin-left: 4.8%;
 }
 
 /*  */
@@ -121,7 +122,6 @@ body {
   margin-left: 8%;
   margin-top: 56px;
   border-radius: 15px;
-
 }
 
 /*  */
@@ -134,13 +134,14 @@ body {
 /*  */
 .Sam_search {
   width: 340px;
-  margin-left: 12px;
+  margin-left: 11px;
   margin-top: 25px;
   color: rgba(32, 50, 57, 0.55);
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   border: 0px;
+  outline: None;
 }
 
 /*  */
@@ -161,7 +162,7 @@ body {
   line-height: 24px;
   color: #FFFFFF;
   margin-top: 12px;
-  margin-left: 8px;
+  margin-left: 3px;
 }
 
 /*  */
@@ -522,7 +523,6 @@ body {
   float: left;
 }
 
-
 /*  */
 .zag_1 {
   width: 144px;
@@ -534,7 +534,6 @@ body {
   line-height: 24px;
   color: #FF7527;
 }
-
 
 /*  */
 .zag_2 {
@@ -548,7 +547,6 @@ body {
   color: #203239;
 }
 
-
 /*  */
 .pictures {
   margin-top: 64px;
@@ -558,7 +556,6 @@ body {
   float: left;
 }
 
-
 /*  */
 .pic_2_1 {
   position: absolute;
@@ -566,7 +563,6 @@ body {
   height: 455px;
   border-radius: 8px;
 }
-
 
 /*  */
 .pic_2_2 {
@@ -577,7 +573,6 @@ body {
   border-radius: 11px;
 }
 
-
 /*  */
 .block_txt {
   width: 577px;
@@ -586,7 +581,6 @@ body {
   margin-top: 40px;
   float: left;
 }
-
 
 /*  */
 .Big_txt_ {
@@ -600,7 +594,6 @@ body {
   color: #203239;
 }
 
-
 /*  */
 .Min_txt_ {
   width: 450px;
@@ -613,7 +606,6 @@ body {
   color: #203239;
 }
 
-
 /*  */
 .But_c_1 {
   background: #EEEDDE;
@@ -625,25 +617,26 @@ body {
   float: left;
 }
 
-
 /*  */
 .txt_c_1 {
   width: 116px;
   padding: auto;
+  margin-top: 4px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #203239;
+  float: left;
 }
-
 
 /*  */
 .znak {
-  width: 16.47px;
-  margin-right: 15.37px;
-  margin-left: 0px;
+  width: 17px;
+  margin-top: 5px;
+  margin-right: 16px;
+  margin-left: 30px;
+  float: left;
 }
-
 
 /*  */
 .But_c_2 {
@@ -667,25 +660,477 @@ body {
 
 
 
-
-
-
-
 /* Четвертый блок */
 .block_4 {
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  float: left;
+}
 
+
+/*  */
+.Pilihan {
+  margin-top: 68px;
+  width: 117px;
+  height: 24px;
+  margin-left: 8%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FF7527;
+}
+
+
+/*  */
+.Residen {
+  width: 428px;
+  height: 54px;
+  margin-top: 8px;
+  margin-left: 8%;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #203239;
+  float: left;
+}
+
+
+/*  */
+.znaki_1 {
+  width: 84px;
+  height: 30px;
+  padding-left: 1047px;
+  margin-top: 15px;
+  margin-right: 8%;
+  float: left;
+}
+
+
+/*  */
+.vlevo_1 {
+  height: 15px;
+  border: 0px;
+  border-radius: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f0f0ef;
+  float: left;
+}
+
+
+/*  */
+.vpravo_1 {
+  height: 15px;
+  margin-left: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #EEEDDE;
+  border-radius: 6px;
+  float: left;
+}
+
+
+/*  */
+.three_img {
+  margin-left: 8%;
+  height: auto;
+  width: 76%;
+  float: left;
+  padding-right: 8%;
+  margin-bottom: 68px;
+}
+
+
+/*  */
+.left_img {
+  float: left;
+  width: 357px;
+}
+
+/*  */
+.sam_left_img {
+  width: 357px;
+  height: 454px;
+  border-radius: 10px;
+}
+
+/*  */
+.sam_zag_1 {
+  margin-top: 16px;
+  width: 262px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #203239;
+}
+
+/*  */
+.sam_txt_1 {
+  width: 310px;
+  height: 90px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #203239;
+}
+
+
+/*  */
+.center_img {
+  margin-left: 181px;
+  float: left;
+}
+
+/*  */
+.sam_center_img {
+  width: 357px;
+  height: 454px;
+  border-radius: 10px;
+}
+
+/*  */
+.sam_zag_2 {
+  width: 262px;
+  height: 36px;
+  margin-top: 16;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #203239;
+}
+
+/*  */
+.sam_txt_2 {
+  width: 356px;
+  height: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #203239;
+  margin-top: 8px;
+}
+
+
+/*  */
+.right_img{
+  margin-left: 181px;
+  float: left;
+}
+
+/*  */
+.sam_right_img {
+  width: 357px;
+  height: 454px;
+  border-radius: 10px;
+}
+
+/*  */
+.sam_zag_3 {
+  width: 262px;
+  height: 36px;
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #203239;
+}
+
+/*  */
+.sam_txt_3 {
+  width: 332px;
+  height: 90px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #203239;
+  margin-top: 16px;
 }
 
 
 
 /* Пятый блок */
 .block_5 {
+  width: 100%;
+  height: auto;
+  background: #EEEDDE;
+  float: left;
+}
 
+/*  */
+.Hubungi {
+  margin-top: 0px;
+  float: left;
+  width: 261px;
+  height: 54px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #203239;
+}
+
+/*  */
+.block5_all_left {
+  margin-top: 48px;
+  width: auto;
+  float: left;
+  margin-bottom: 48px;
+  margin-left: 8%;
+}
+
+/*  */
+.block5_left {
+  margin-top: 23px;
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+/*  */
+.block5_left_left {
+  padding: 24px;
+  width: 230px;
+  height: 178px;
+  border: 1px solid rgba(255, 117, 39, 0.5);
+  border-radius: 10px;
+  float: left;
+}
+
+/*  */
+.image_1 {
+  width: 34px;
+  height: 34px;
+  margin-left: 14px;
+  margin-top: 18px;
+  float: left;
+}
+
+/*  */
+.p_1 {
+  margin-top: 7px;
+  margin-left: 50px;
+  width: 131px;
+  height: 56px;
+  float: left;
+  line-height: 28px;
+}
+
+/*  */
+.butt_1 {
+  padding: 13px 41px;
+  width: 195px;
+  height: 50px;
+  margin-left: 18px;
+  margin-top: 24px;
+  border: 0px;
+  top: 104px;
+  background: rgba(255, 117, 39, 0.2);
+  border-radius: 10px;
+}
+
+/*  */
+.a_1 {
+  width: 72px;
+  height: 24px;
+  padding-left: 0px;
+  padding-top: 13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FF7527;
+  margin: 0px 10px;
+}
+
+/*  */
+.block5_left_right {
+  margin-left: 48px;
+  float: left;
+  padding: 24px;
+  width: 306px;
+  height: 178px;
+  left: 291px;
+  border: 1px solid rgba(255, 117, 39, 0.5);
+}
+
+/*  */
+.image_2 {
+  margin-top: 18px;
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
+/*  */
+.p_2 {
+  margin-top: 12px;
+  margin-left: 60px;
+  width: 160px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #203239;
+  float: left;
+}
+
+/*  */
+.butt_2 {
+  padding: 13px 41px;
+  width: 195px;
+  height: 50px;
+  left: 55.5px;
+  top: 104px;
+  border: 0px;
+  background: rgba(255, 117, 39, 0.8);
+  border-radius: 10px;
+  margin-left: 12px;
+  margin-top: 54px;
+}
+
+/*  */
+.a_2 {
+  width: 85px;
+  height: 24px;
+  left: 55px;
+  top: 13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #EEEDDE;
+  margin: 0px 10px;
+}
+
+/*  */
+.block5_all_right {
+  width: 399.11px;
+  height: 245px;
+  margin-top: 12px;
+  margin-left: 400px;
+  float: left;
+}
+
+/*  */
+.top_right_zag {
+  margin-left: 30px;
+  width: 253px;
+  height: 54px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #203239;
+}
+
+/*  */
+.left_picture {
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 156px;
+  height: 104px;
+  float: left;
+}
+
+/*  */
+.right_picture {
+  margin-left: 32px;
+  margin-bottom: 0px;
+  width: 211.11px;
+  height: 152px;
+  float: left;
 }
 
 
 
 /* Нижняя полоса */
 footer {
+  width: 100%;
+  height: auto;
+  background: #203239;
+  float: left;
+}
 
+
+/*  */
+.p_end {
+  width: 72px;
+  height: 42px;
+  margin-left: 8%;
+  margin-top: 40px;
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 36px;
+  color: #EEEDDE;
+  margin-bottom: 31px;
+  float: left;
+}
+
+
+
+
+
+.soc_set {
+  padding: 0px;
+  width: 288px;
+  height: 24px;
+  margin-left: 1100px;
+  margin-top: 40px;
+  margin-bottom: 31px;
+  float: left;
+}
+
+
+/*  */
+.inst {
+  width: 24px;
+  height: 24px;
+  left: 11.7%;
+  right: 11.7%;
+  top: 11.64%;
+  bottom: 11.63%;
+  float: left;
+  margin-left: 0px;
+}
+
+
+/*  */
+.face {
+  margin-left: 64px;
+  width: 24px;
+  height: 24px;
+  left: 28.65%;
+  right: 29.06%;
+  top: 11.98%;
+  bottom: 11.98%;
+  float: left;
+}
+
+
+/*  */
+.t {
+  margin-left: 64px;
+  width: 24px;
+  height: 24px;
+  left: 29.17%;
+  right: 29.25%;
+  top: 12.5%;
+  bottom: 14.84%;
+  float: left;
+}
+
+/*  */
+.in {
+  margin-left: 64px;
+  width: 24px;
+  height: 24px;
+  left: 10.94%;
+  right: 10.94%;
+  top: 7.81%;
+  bottom: 11.98%;
+  float: left;
 }
