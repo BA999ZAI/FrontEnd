@@ -23,7 +23,22 @@ import telef from './assets/img/telef.png';
 
 
 
-function App() {
+App = () => {
+  showAlert = () => {
+    const element = document.getElementById('pi');
+    if (element == null){
+      return;
+    }
+    const value = element.innerHTML;
+    if (value == null){
+      return;
+    }
+    alert(value);
+
+  }
+  onChangeText = (event) => {
+      document.getElementById('pi').innerHTML = event.target.value;
+  }
   return (
     <div>
     
@@ -69,13 +84,13 @@ function App() {
                   <input 
                     id="elem"
                     className="sam_search" 
-                    onkeyup="onChangeText(this.value)" 
+                    onKeyUp={(event) => onChangeText(event)} 
                     type="text" 
                     placeholder="Search location, properties, residental group"/>
 
                   <p id="pi" className="m-0"></p>
                 </div>
-                <button className="button_b_5 ms-auto" onclick="showAlert()">Search</button>
+                <button className="button_b_5 ms-auto" onClick={showAlert()}>Search</button>
                         
               </div>
               <div className="d-flex justify-content-between" style={{marginTop: '56px', width: '600px'}}>
