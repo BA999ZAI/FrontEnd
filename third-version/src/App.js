@@ -23,8 +23,8 @@ import telef from './assets/img/telef.png';
 
 
 
-App = () => {
-  showAlert = () => {
+const App = () => {
+  const showAlert = () => {
     const element = document.getElementById('pi');
     if (element == null){
       return;
@@ -36,7 +36,7 @@ App = () => {
     alert(value);
 
   }
-  onChangeText = (event) => {
+  const onChangeText = (event) => {
       document.getElementById('pi').innerHTML = event.target.value;
   }
   return (
