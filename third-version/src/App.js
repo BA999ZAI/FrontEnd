@@ -93,7 +93,6 @@ const App = () => {
                   <p id="pi" className="m-0"></p>
                 </div>
                 <button className="button_b_5 ms-auto" onClick={() => showAlert()}>Search</button>
-
               </div>
               <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
                 <div className="d-flex flex-column" style={{ width: '150px' }}>
