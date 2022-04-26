@@ -24,7 +24,6 @@ import TestComponent from './components/testComponent/testComponent';
 
 const App = () => {
   const showAlert = () => {
-    debugger;
     const element = document.getElementById('pi');
     if (element == null) {
       return;
