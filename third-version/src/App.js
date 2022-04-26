@@ -57,13 +57,11 @@ const App = () => {
       {/* 1 BLOCK */}
       <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
         <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
-        <TestComponent num='10' simbol='Tahun' text='Sudah berpengalaman' />
+        <TestComponent sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' simbol='Tahun' text='Sudah berpengalaman' />
         <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
       </div>
 
 
-      <TestComponent text={'hello2'} />
-      <TestComponent text='hello3' />
       <div className="b_5 w-100">
         <div className="w-100 d-flex flex-column" style={{ margin: '60px 100px' }}>
           <div className="d-flex w-100 align-items-center">
@@ -114,7 +112,7 @@ const App = () => {
               </div>
               <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
                 <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
-                <TestComponent num='10' simbol='Tahun' text='Sudah berpengalaman' />
+                <TestComponent sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' simbol='Tahun' text='Sudah berpengalaman' />
                 <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
               </div>
             </div>
