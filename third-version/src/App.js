@@ -22,6 +22,19 @@ import T from './assets/img/T.png';
 import telef from './assets/img/telef.png';
 import TestComponent from './components/testComponent/testComponent';
 
+
+{/* <p className="plus m-0" style={{
+                      paddingTop: '45px',
+                      fontWeight: '700',
+                      fontSize: '16px',
+                      lineHeight: '24px'
+                    }}>
+                      Tahun
+                    </p> */}
+
+
+
+
 const App = () => {
   const showAlert = () => {
     const element = document.getElementById('pi');
@@ -42,7 +55,13 @@ const App = () => {
     <div>
 
       {/* 1 BLOCK */}
-      <TestComponent text='hello1' />
+      <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
+        <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
+        <TestComponent num='10' simbol='Tahun' text='Sudah berpengalaman' />
+        <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
+      </div>
+
+
       <TestComponent text={'hello2'} />
       <TestComponent text='hello3' />
       <div className="b_5 w-100">
@@ -94,50 +113,9 @@ const App = () => {
                 <button className="button_b_5 ms-auto" onClick={() => showAlert()}>Search</button>
               </div>
               <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
-                <div className="d-flex flex-column" style={{ width: '150px' }}>
-                  <div className="d-flex">
-                    <p className="num m-0">
-                      200
-                    </p>
-                    <p className="plus m-0 align-self-center">
-                      +
-                    </p>
-                  </div>
-                  <p className="txt_b_5 m-0">
-                    Residental grup telah bergabung
-                  </p>
-                </div>
-                <div className="d-flex flex-column" style={{ width: '150px' }}>
-                  <div className="d-flex">
-                    <p className="num m-0">
-                      10
-                    </p>
-                    <p className="plus m-0" style={{
-                      paddingTop: '45px',
-                      fontWeight: '700',
-                      fontSize: '16px',
-                      lineHeight: '24px'
-                    }}>
-                      Tahun
-                    </p>
-                  </div>
-                  <p className="txt_b_5 m-0">
-                    Sudah berpengalaman
-                  </p>
-                </div>
-                <div className="d-flex flex-column" style={{ width: '150px' }}>
-                  <div className="d-flex">
-                    <p className="num m-0">
-                      999
-                    </p>
-                    <p className="plus m-0 align-self-center">
-                      +
-                    </p>
-                  </div>
-                  <p className="txt_b_5 m-0">
-                    Properti tersedia di berbagai Kota
-                  </p>
-                </div>
+                <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
+                <TestComponent num='10' simbol='Tahun' text='Sudah berpengalaman' />
+                <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
               </div>
             </div>
             <img src={block1_right} className="ms-auto" style={{ marginTop: '40px', width: '500px', height: '625px' }} />
