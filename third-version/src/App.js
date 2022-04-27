@@ -21,6 +21,7 @@ import telef from './assets/img/telef.png';
 import TestComponent from './components/testComponent/testComponent';
 import TwoBlockComponent from './components/testComponent/twoBlockComponent';
 import FourBlockComponent from './components/testComponent/fourBlockComponent';
+import OneMainBlockComponent from './components/testComponent/oneMainBlockComponent';
 
 
 const App = () => {
@@ -44,67 +45,79 @@ const App = () => {
 
       {/* 1 BLOCK */}
       <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
+  
         <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
         <TestComponent sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' simbol='Tahun' text='Sudah berpengalaman' />
         <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
+  
       </div>
-
 
       <div className="b_5 w-100">
         <div className="w-100 d-flex flex-column" style={{ margin: '60px 100px' }}>
           <div className="d-flex w-100 align-items-center">
+
             <p className="omah">
               O~Mah
             </p>
+
             <div className="knopki d-flex justify-content-between ms-auto">
-              <a className="knopa">
-                Home
-              </a>
-              <a className="knopa">
-                About
-              </a>
+
+              <OneMainBlockComponent text='Home' />
+              <OneMainBlockComponent text='About' />
+
               <div className="d-flex align-self-center">
-                <a className="knopa">
-                  Properties
-                </a>
+  
+                <OneMainBlockComponent text='Properties' />
                 <img src={caret_down} style={{ width: '24px', height: '24px' }} />
+  
               </div>
-              <a className="knopa">
-                Contact
-              </a>
+
+              <OneMainBlockComponent text='Contact' />
+
             </div>
+
           </div>
           <div className="d-flex">
             <div className="d-flex flex-column" style={{ marginTop: '100px' }}>
+
               <p className="m-0 big_b_5">
                 Temukan Hunian Keluarga Sesuai Keinginanmu
               </p>
+
               <p className="min_b_5">
                 Menyediakan hunian bagi keluarga anda dengan varian pilihan dan lokasi yang strategis di kota anda dengan cara yang lebih mudah.
               </p>
 
               <div className="search d-flex align-items-center">
+
                 <img src={search} style={{ width: '24px', height: '24px' }} />
 
                 <div className="elem d-flex flex-column w-100">
+
                   <input
                     id="elem"
                     className="sam_search"
                     onKeyUp={(event) => onChangeText(event)}
                     type="text"
                     placeholder="Search location, properties, residental group" />
-
                   <p id="pi" className="m-0"></p>
+
                 </div>
+
                 <button className="button_b_5 ms-auto" onClick={() => showAlert()}>Search</button>
+
               </div>
               <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
+
                 <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
                 <TestComponent sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' simbol='Tahun' text='Sudah berpengalaman' />
                 <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
+
               </div>
             </div>
+
             <img src={block1_right} className="ms-auto" style={{ marginTop: '40px', width: '500px', height: '625px' }} />
+
           </div>
         </div>
       </div>
@@ -268,6 +281,7 @@ const App = () => {
           </div>
         </div>
       </div>
+  
     </div>
   );
 }
