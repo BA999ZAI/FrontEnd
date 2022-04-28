@@ -18,10 +18,9 @@ import phone from './assets/img/phone.png';
 import search from './assets/img/search.png';
 import T from './assets/img/T.png';
 import telef from './assets/img/telef.png';
-import TestComponent from './components/testComponent/testComponent';
-import TwoBlockComponent from './components/testComponent/twoBlockComponent';
-import FourBlockComponent from './components/testComponent/fourBlockComponent';
-import OneMainBlockComponent from './components/testComponent/oneMainBlockComponent';
+import TableOne from './components/table1Block/TableOne';
+import TableTwo from './components/table2Block/TableTwo';
+import BlockImages from './components/images4Block/BlockImages';
 
 
 const App = () => {
@@ -46,9 +45,9 @@ const App = () => {
       {/* 1 BLOCK */}
       <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
   
-        <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
-        <TestComponent sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' simbol='Tahun' text='Sudah berpengalaman' />
-        <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
+        <TableOne num='200' symbol='+' text='Residental grup telah bergabung' />
+        <TableOne sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' symbol='Tahun' text='Sudah berpengalaman' />
+        <TableOne num='999' symbol='+' text='Properti tersedia di berbagai Kota' />
   
       </div>
 
@@ -62,18 +61,25 @@ const App = () => {
 
             <div className="knopki d-flex justify-content-between ms-auto">
 
-              <OneMainBlockComponent text='Home' />
-              <OneMainBlockComponent text='About' />
+              <a className="knopa">
+                Home
+              </a>
+              <a className="knopa">
+                About
+              </a>
 
               <div className="d-flex align-self-center">
   
-                <OneMainBlockComponent text='Properties' />
+                <a className="knopa">
+                  Properties
+                </a>
                 <img src={caret_down} style={{ width: '24px', height: '24px' }} />
   
               </div>
 
-              <OneMainBlockComponent text='Contact' />
-
+              <a className="knopa">
+                  Contact
+              </a>
             </div>
 
           </div>
@@ -109,9 +115,9 @@ const App = () => {
               </div>
               <div className="d-flex justify-content-between" style={{ marginTop: '56px', width: '600px' }}>
 
-                <TestComponent num='200' simbol='+' text='Residental grup telah bergabung' />
-                <TestComponent sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' simbol='Tahun' text='Sudah berpengalaman' />
-                <TestComponent num='999' simbol='+' text='Properti tersedia di berbagai Kota' />
+                <TableOne num='200' symbol='+' text='Residental grup telah bergabung' />
+                <TableOne sty={{paddingTop: '45px', fontWeight: '700', fontSize: '16px', lineHeight: '24px'}} num='10' symbol='Tahun' text='Sudah berpengalaman' />
+                <TableOne num='999' symbol='+' text='Properti tersedia di berbagai Kota' />
 
               </div>
             </div>
@@ -131,9 +137,9 @@ const App = () => {
           </p>
 
           <div className="w-100 d-flex justify-content-around" style={{ marginTop: '64px', height: '300px' }}>
-            <TwoBlockComponent text_1='Pilih Properti' num='01' text_2='Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini' />
-            <TwoBlockComponent text_1='Proses Booking' num='02' text_2='Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan unit properti tertentu.' />
-            <TwoBlockComponent text_1='KPR dan Sertifikasi' num='03' text_2='Pembiayaan KPR untuk pembeli rumah dengan skema pembiayaan jika diperlukan dan dilanjutkan proses sertifkasi HGB.' />
+            <TableTwo text_1='Pilih Properti' num='01' text_2='Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini' />
+            <TableTwo text_1='Proses Booking' num='02' text_2='Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan unit properti tertentu.' />
+            <TableTwo text_1='KPR dan Sertifikasi' num='03' text_2='Pembiayaan KPR untuk pembeli rumah dengan skema pembiayaan jika diperlukan dan dilanjutkan proses sertifkasi HGB.' />
           </div>
         </div>
       </div>
@@ -197,9 +203,9 @@ const App = () => {
           </div>
 
           <div className="d-flex flex-row justify-content-evenly" style={{ marginTop: '64px' }}>
-            <FourBlockComponent img={image__left} min_text='Magnolia Surabaya' big_text='Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec. Jatiuwung, Kota Tangerang, Banten 15136' />
-            <FourBlockComponent img={image__center} min_text='Pinang Residences' big_text='Jl. Deplu Raya No.16 RT.5, RW.003 Bintaro, Pesanggrahan, Jakarta Selatan 12330' />
-            <FourBlockComponent img={image__right} min_text='South Grove' big_text='1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12440' />
+            <BlockImages img={image__left} min_text='Magnolia Surabaya' big_text='Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec. Jatiuwung, Kota Tangerang, Banten 15136' />
+            <BlockImages img={image__center} min_text='Pinang Residences' big_text='Jl. Deplu Raya No.16 RT.5, RW.003 Bintaro, Pesanggrahan, Jakarta Selatan 12330' />
+            <BlockImages img={image__right} min_text='South Grove' big_text='1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12440' />
           </div>
         </div>
       </div>

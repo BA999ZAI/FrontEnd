@@ -1,4 +1,4 @@
-const TestComponent = ({num, simbol, text, sty}) => {
+const TestComponent = ({num, symbol, text, sty}) => {
     return <>
         <div className="d-flex flex-column" style={{ width: '150px' }}>
             <div className="d-flex">
@@ -6,7 +6,7 @@ const TestComponent = ({num, simbol, text, sty}) => {
                     {num}
                 </p>
                 <p className="plus m-0 align-self-center" style={sty}>
-                    {simbol}
+                    {symbol}
                 </p>
             </div>
             <p className="txt_b_5 m-0">
