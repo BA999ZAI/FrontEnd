@@ -53,6 +53,11 @@ $white-color: #FFFFFF;
   font-size: 16px;
 }
 
+%line-height {
+  line-height: 24px;
+}
+
+
 .b_5 {
   display: flex;
   margin: 0px;
@@ -73,7 +78,7 @@ $white-color: #FFFFFF;
 .knopa {
   @extend %font-wei;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #203239;
   border-bottom: 3px solid #EEEDDE;
   text-decoration: none;
@@ -118,7 +123,7 @@ $white-color: #FFFFFF;
 .sam_search {
   @extend %font-wei;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: rgba(32, 50, 57, 0.55);
   border: 0px;
 }
@@ -132,7 +137,7 @@ $white-color: #FFFFFF;
   border-radius: 10px;   
   @extend %font-weight;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: $white-color; 
 }
 .button_b_5:hover {
@@ -185,7 +190,7 @@ $white-color: #FFFFFF;
 
 .txt_top_block {
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #203239;
 }
 
@@ -202,7 +207,7 @@ $white-color: #FFFFFF;
 .min_txt_b_3 {
   font-weight: 500;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #FF7527;
 }
 
@@ -243,7 +248,7 @@ $white-color: #FFFFFF;
   margin-bottom: 0px;
   @extend %font-weight;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #203239;
 }
 
@@ -254,7 +259,7 @@ $white-color: #FFFFFF;
   border-radius: 10px;
   @extend %font-weight;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: $white-color;
 }
 
@@ -263,7 +268,7 @@ $white-color: #FFFFFF;
 .min_txt_1 {
   font-weight: 500;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #FF7527;
 }
 
@@ -351,7 +356,7 @@ $white-color: #FFFFFF;
   border-radius: 10px;
   @extend %font-weight;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #FF7527;
   padding: 13px 41px;
 }
@@ -362,7 +367,7 @@ $white-color: #FFFFFF;
   border-radius: 10px;
   @extend %font-weight;
   @extend %font-size;
-  line-height: 24px;
+  @extend %line-height;
   color: #EEEDDE;
 }
 
