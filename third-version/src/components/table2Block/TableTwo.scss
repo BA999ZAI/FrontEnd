@@ -1,0 +1,22 @@
+%font {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;    
+}
+
+
+.zero {
+    @extend %font;
+    color: #FF7527;
+}
+
+.symbolOrange {
+    height: 30px;
+    background: #FF7527;
+    border-radius: 5px;
+}
+  
+.textBac {
+    @extend %font;
+    color: #203239;
+}

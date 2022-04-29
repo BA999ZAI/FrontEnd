@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import block1_right from './assets/img/block1_right.png';
 import caret_down from './assets/img/caret_down.png';

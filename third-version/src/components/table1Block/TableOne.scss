@@ -1,8 +1,11 @@
+$primary-color: #FF7527;
+
+
 .plus { 
     height: 84px;
     font-weight: 800;
     font-size: 55px;
     line-height: 150%;
-    color: #FF7527;
+    color: $primary-color;
     display: flex;
   }

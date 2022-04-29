@@ -1,3 +1,5 @@
+import './TableOne.scss';
+
 const TestComponent = ({num, symbol, text, sty}) => {
     return <>
         <div className="d-flex flex-column" style={{ width: '150px' }}>
@@ -5,7 +7,7 @@ const TestComponent = ({num, symbol, text, sty}) => {
                 <p className="num m-0">
                     {num}
                 </p>
-                <p className="plus m-0 align-self-center" style={sty}>
+                <p className='m-0 align-self-center plus' style={sty}>
                     {symbol}
                 </p>
             </div>

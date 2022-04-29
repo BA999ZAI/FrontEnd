@@ -39,15 +39,28 @@
 
 /* 1 BLOCK */
 
+%font-weight {
+  font-weight: 600;
+}
+
+%font-wei {
+  font-weight: 300;
+}
+
+$white-color: #FFFFFF;
+
+%font-size {
+  font-size: 16px;
+}
+
 .b_5 {
   display: flex;
   margin: 0px;
   background: #EEEDDE;
-  width: 100%;
 }
 
 .omah {
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 24px;
   line-height: 28px;
   color: #203239;
@@ -58,8 +71,8 @@
 }
 
 .knopa {
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 24px;
   color: #203239;
   border-bottom: 3px solid #EEEDDE;
@@ -67,14 +80,14 @@
 }
 
 .knopa:hover {
-  font-weight: 600;
+  @extend %font-weight;
   border-bottom: 3px solid #F7762E;
   color: #203239;
 }
 
 .big_b_5 {
   width: 700px;
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 56px;
   line-height: 150%;
   color: #203239;
@@ -83,8 +96,8 @@
 .min_b_5 {
   margin-top: 24px;
   width: 450px;
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 30px;
   color: rgba(32, 50, 57, 0.55);
 }
@@ -92,7 +105,7 @@
 .search {
   margin-top: 56px;
   padding: 10px 20px;
-  background: #FFFFFF;
+  background: $white-color;
   border-radius: 15px;
   width: 700px;
 }
@@ -103,8 +116,8 @@
 }
 
 .sam_search {
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 24px;
   color: rgba(32, 50, 57, 0.55);
   border: 0px;
@@ -117,28 +130,19 @@
   padding: 13px 41px;
   background: #203239;
   border-radius: 10px;   
-  font-weight: 600;
-  font-size: 16px;
+  @extend %font-weight;
+  @extend %font-size;
   line-height: 24px;
-  color: #FFFFFF; 
+  color: $white-color; 
 }
 .button_b_5:hover {
   padding: 14px 42px;
 }
 
-.plus { 
-  height: 84px;
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 150%;
-  color: #FF7527;
-  display: flex;
-}
-
 .num {
   display: flex;
   align-self: center;
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 55px;
   line-height: 150%;
   color: #203239; 
@@ -147,8 +151,8 @@
 
 .txt_b_5 {
   width: 120px;
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 30px;
   color: rgba(32, 50, 57, 0.55);
 }
@@ -156,7 +160,7 @@
 /* 2 BLOCK */
 
 .b_4 {
-  background: #FFFFFF;
+  background: $white-color;
   width: 100%;
   display: flex;
   margin: 0px;
@@ -164,14 +168,14 @@
 
 .big_txt_b_4 {
   width: 500px;
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 36px;
   line-height: 150%;
   color: #203239;
 }
 
 .block_b_4 {
-  border: 1px solid #ffffff;
+  border: 1px solid $white-color;
   border-radius: 10px;
   padding: 20px 35px;
 }
@@ -179,59 +183,39 @@
   border: 1px solid #EEEDDE;
 }
 
-.bord_orange {
-  height: 30px;
-  background: #FF7527;
-  border-radius: 5px;
-}
-
 .txt_top_block {
-  font-size: 16px;
+  @extend %font-size;
   line-height: 24px;
   color: #203239;
-}
-
-.zero {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FF7527;
 }
 
 .txt_b_4 {
   width: 220px;
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 30px;
   color: rgba(32, 50, 57, 0.55);
-}
-
-.baca {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #203239;
 }
 
 /* 3 BLOCK */
 
 .min_txt_b_3 {
   font-weight: 500;
-  font-size: 16px;
+  @extend %font-size;
   line-height: 24px;
   color: #FF7527;
 }
 
 .big_txt_b_3 {
   margin-top: 8px;
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 36px;
   line-height: 150%;
   color: #203239;
 }
 
 .txt1_right_b_3 {
-  font-weight: 600;
+  @extend %font-weight;
   margin-bottom: 0px;
   font-size: 36px;
   line-height: 150%;
@@ -241,8 +225,8 @@
 .txt2_right_b_3 {
   margin-top: 24px;
   margin-bottom: 48px;
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 30px;
   color: #203239;
 }
@@ -257,8 +241,8 @@
 .txt1_button_b_3 {
   margin-left: 12px;
   margin-bottom: 0px;
-  font-weight: 600;
-  font-size: 16px;
+  @extend %font-weight;
+  @extend %font-size;
   line-height: 24px;
   color: #203239;
 }
@@ -268,24 +252,24 @@
   padding: 13px 41px;
   background: #203239;
   border-radius: 10px;
-  font-weight: 600;
-  font-size: 16px;
+  @extend %font-weight;
+  @extend %font-size;
   line-height: 24px;
-  color: #FFFFFF;
+  color: $white-color;
 }
 
 /* 4 BLOCK */
 
 .min_txt_1 {
   font-weight: 500;
-  font-size: 16px;
+  @extend %font-size;
   line-height: 24px;
   color: #FF7527;
 }
 
 .big_txt_1 {
   margin-top: 8px;
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 36px;
   line-height: 150%;
   color: #203239;    
@@ -301,12 +285,6 @@
   border: 2px solid orange;
 }
 
-.pikcha {
-  width: 357px;
-  height: 454px;
-  margin-bottom: 8px;
-}
-
 .big_txt_0 {
   font-weight: 500;
   font-size: 24px;
@@ -317,8 +295,8 @@
 }
 
 .txt_3 {
-  font-weight: 300;
-  font-size: 16px;
+  @extend %font-wei;
+  @extend %font-size;
   line-height: 30px;
   color: #203239;
   margin: 0px;
@@ -328,14 +306,14 @@
 /* 5 BLOCK */
 
 .txt_1 {
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 36px;
   line-height: 150%;
   color: #203239;
 }
 
 .txt_1_1 {
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 36px;
   line-height: 150%;
   color: #203239;
@@ -352,7 +330,7 @@
   width: 120px;
   height: 56px;
   font-weight: 400;
-  font-size: 16px;
+  @extend %font-size;
   line-height: 26px;
   color: #203239;
   margin-left: 16px;
@@ -362,7 +340,7 @@
   width: 160px;
   height: 56px;       
   font-weight: 400;
-  font-size: 16px;
+  @extend %font-size;
   line-height: 26px;
   color: #203239;
   margin-left: 16px;
@@ -371,8 +349,8 @@
 .Call_Now {
   background: rgba(255, 117, 39, 0.2);
   border-radius: 10px;
-  font-weight: 600;
-  font-size: 16px;
+  @extend %font-weight;
+  @extend %font-size;
   line-height: 24px;
   color: #FF7527;
   padding: 13px 41px;
@@ -382,8 +360,8 @@
   padding: 13px 41px;
   background: rgba(255, 117, 39, 0.8);
   border-radius: 10px;
-  font-weight: 600;
-  font-size: 16px;
+  @extend %font-weight;
+  @extend %font-size;
   line-height: 24px;
   color: #EEEDDE;
 }
@@ -392,7 +370,7 @@
 
 .block_1 {
   padding: 38px 0px;
-  font-weight: 600;
+  @extend %font-weight;
   font-size: 24px;
   line-height: 28px;
   color: #EEEDDE;
