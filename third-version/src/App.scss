@@ -140,9 +140,6 @@ $white-color: #FFFFFF;
   @extend %line-height;
   color: $white-color; 
 }
-.button_b_5:hover {
-  padding: 14px 42px;
-}
 
 .num {
   display: flex;
@@ -382,13 +379,13 @@ $white-color: #FFFFFF;
 }
 
 .img_all {
+  @extend .cursor;
   width: 20px; 
   height: 20px;
   display: flex;
 }
 
-.img_all:hover {
-  width: 22px;
-  height: 22px;
-}
 
+.cursor {
+  cursor: pointer;
+}
